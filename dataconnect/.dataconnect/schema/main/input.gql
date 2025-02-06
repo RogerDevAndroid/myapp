@@ -1,0 +1,168 @@
+"""
+✨ `Car_KeyOutput` returns the primary key fields of table type `Car`.
+
+It has the same format as `Car_Key`, but is only used as mutation return value.
+"""
+scalar Car_KeyOutput
+"""
+✨ Generated data input type for table 'Car'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input Car_Data {
+  """
+  ✨ Generated from Field `Car`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Car`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `Car`.`asientos` of type `String!`
+  """
+  asientos: String
+  """
+  ✨ `_expr` server value variant of `asientos` (✨ Generated from Field `Car`.`asientos` of type `String!`)
+  """
+  asientos_expr: String_Expr
+  """
+  ✨ Generated from Field `Car`.`marca` of type `String!`
+  """
+  marca: String
+  """
+  ✨ `_expr` server value variant of `marca` (✨ Generated from Field `Car`.`marca` of type `String!`)
+  """
+  marca_expr: String_Expr
+  """
+  ✨ Generated from Field `Car`.`modelo` of type `String!`
+  """
+  modelo: String
+  """
+  ✨ `_expr` server value variant of `modelo` (✨ Generated from Field `Car`.`modelo` of type `String!`)
+  """
+  modelo_expr: String_Expr
+  """
+  ✨ Generated from Field `Car`.`nombre` of type `String!`
+  """
+  nombre: String
+  """
+  ✨ `_expr` server value variant of `nombre` (✨ Generated from Field `Car`.`nombre` of type `String!`)
+  """
+  nombre_expr: String_Expr
+  """
+  ✨ Generated from Field `Car`.`precio` of type `String!`
+  """
+  precio: String
+  """
+  ✨ `_expr` server value variant of `precio` (✨ Generated from Field `Car`.`precio` of type `String!`)
+  """
+  precio_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'Car'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input Car_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [Car_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: Car_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [Car_Filter!]
+  """
+  ✨ Generated from Field `Car`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `Car`.`asientos` of type `String!`
+  """
+  asientos: String_Filter
+  """
+  ✨ Generated from Field `Car`.`marca` of type `String!`
+  """
+  marca: String_Filter
+  """
+  ✨ Generated from Field `Car`.`modelo` of type `String!`
+  """
+  modelo: String_Filter
+  """
+  ✨ Generated from Field `Car`.`nombre` of type `String!`
+  """
+  nombre: String_Filter
+  """
+  ✨ Generated from Field `Car`.`precio` of type `String!`
+  """
+  precio: String_Filter
+}
+"""
+✨ Generated first-row input type for table 'Car'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input Car_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [Car_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: Car_Filter
+}
+"""
+✨ Generated key input type for table 'Car'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input Car_Key {
+  """
+  ✨ Generated from Field `Car`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Car`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'Car'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input Car_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: Car_Filter
+}
+"""
+✨ Generated order input type for table 'Car'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input Car_Order {
+  """
+  ✨ Generated from Field `Car`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `Car`.`asientos` of type `String!`
+  """
+  asientos: OrderDirection
+  """
+  ✨ Generated from Field `Car`.`marca` of type `String!`
+  """
+  marca: OrderDirection
+  """
+  ✨ Generated from Field `Car`.`modelo` of type `String!`
+  """
+  modelo: OrderDirection
+  """
+  ✨ Generated from Field `Car`.`nombre` of type `String!`
+  """
+  nombre: OrderDirection
+  """
+  ✨ Generated from Field `Car`.`precio` of type `String!`
+  """
+  precio: OrderDirection
+}

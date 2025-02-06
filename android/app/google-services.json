@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159477293268",
+    "project_id": "amplimentor-firebase-ai-app",
+    "storage_bucket": "amplimentor-firebase-ai-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159477293268:android:b6a61cb6eb36906459db41",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFb8yJz-CbNlFjhjQdYQrcvVnmrjn1Ck8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

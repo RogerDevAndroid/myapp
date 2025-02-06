@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "ampli-mentor-051hby"
+location: "northamerica-northeast1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "car_data"
+      cloudSql:
+        instanceId: "ampli-mentor-051hby"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
